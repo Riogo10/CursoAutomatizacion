@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Google Translate" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-11-10T22:59:52" hostname="GS-0134" time="0.615">
+  <properties/>
+  <testcase name="Translate from English to Spanish" classname="Google Translate" time="0.615">
+    <failure message="io.cucumber.junit.UndefinedStepException: The step 'that Susan wants to translate a word' and 2 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;that Susan wants to translate a word&quot;)&#10;public void thatSusanWantsToTranslateAWord() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;she translates the word cheese from English to Spanish&quot;)&#10;public void sheTranslatesTheWordCheeseFromEnglishToSpanish() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;she should see the word queso in the screen&quot;)&#10;public void sheShouldSeeTheWordQuesoInTheScreen() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step 'that Susan wants to translate a word' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;that Susan wants to translate a word&quot;)
+public void thatSusanWantsToTranslateAWord() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;she translates the word cheese from English to Spanish&quot;)
+public void sheTranslatesTheWordCheeseFromEnglishToSpanish() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;she should see the word queso in the screen&quot;)
+public void sheShouldSeeTheWordQuesoInTheScreen() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/GS-0134/Desktop/Selenium%20con%20POM/untitled%20-%20copia/src/test/resources/features/googletranslate.feature
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Translate from English to Spanish(google-translate;translate-from-english-to-spanish)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   ___   _  _   ___    ___   _  _    ___ 
+ |_   _| | __| / __| |_   _|   | _ \ | __| | \| | |   \  |_ _| | \| |  / __|
+   | |   | _|  \__ \   | |     |  _/ | _|  | .` | | |) |  | |  | .` | | (_ |
+   |_|   |___| |___/   |_|     |_|   |___| |_|\_| |___/  |___| |_|\_|  \___|
+
+Translate from English to Spanish
+-----------------------------------------------------------------------------
+]]></system-err>
+</testsuite>
