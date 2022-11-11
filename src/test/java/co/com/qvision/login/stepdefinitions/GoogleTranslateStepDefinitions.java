@@ -8,22 +8,27 @@ import net.thucydides.core.annotations.Steps;
 
 public class GoogleTranslateStepDefinitions {
 
-        @Steps
-        GoogleHomePage traductor;
+    @Steps
+    GoogleHomePage guru;
 
-        @Given("that Susan wants to translate a word")
-        public void thatSusanWantsToTranslateAWord(){
-                traductor.textBoxEmailLogin();
-        }
+    @Given("since diego wants to enter his credentials")
+    public void sinceDiegoWantsToEnterHisCredentials() {
+        guru.openPage();
 
-        @When("she translates the word {string} from English to Spanish")
-        public void sheTranslatesTheWordFromEnglishToSpanish(String word){
-                traductor.textBoxEmailLogin();
-        }
+    }
 
-        @Then("she should see the word {string} in the screen")
-        public void sheShouldSeeTheWordInTheScreen(String result){
-                traductor.textBoxEmailLogin();
-        }
+    @When("when he enters his email {string}")
+    public void whenHeEntersHisEmail(String email) {
+        guru.textBoxEmailLogin(email);
+    }
 
+    @When("your password {string}")
+    public void yourPassword(String password) {
+        guru.textBoxPasswordLogin(password);
+    }
+
+    @Then("it will validate the message {string}")
+    public void itWillValidateTheMessage(String finalMessage) {
+        guru.validationFinalMessage(finalMessage);
+    }
 }

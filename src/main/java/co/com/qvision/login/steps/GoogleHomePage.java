@@ -3,20 +3,28 @@ package co.com.qvision.login.steps;
 
 import co.com.qvision.login.pages.HomePage;
 import net.thucydides.core.annotations.Step;
+import org.junit.Assert;
 
 public class GoogleHomePage {
 
     HomePage homePage;
 
     @Step
-    public void opensGoogleTranslatePage(){
+    public void openPage(){
         homePage.open();
     }
 
     @Step
-    public void textBoxEmailLogin(String email, String password){
+    public void textBoxEmailLogin(String email){
         homePage.textBoxEmailLogin(email);
-        homePage.textBoxPasswordLogin(password);
-        homePage.clickButton();
+    }
+
+   @Step
+    public void textBoxPasswordLogin( String password){
+       homePage.textBoxPasswordLogin(password);
+    }
+    @Step
+    public void validationFinalMessage(String finalMessage){
+        Assert.assertEquals(homePage.finalMessage(), finalMessage);
     }
 }

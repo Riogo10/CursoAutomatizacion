@@ -2,7 +2,8 @@ Feature: Google translate
   As a web user
   I want to use google translate
   to translate words between different languages
-  Scenario: Translate from English to Spanish
-    Given that Susan wants to translate a word
-    When she translates the word "cheese" from English to Spanish
-    Then she should see the word "queso nm" in the screen
+  Scenario: Enter credentials
+    Given since diego wants to enter his credentials
+    When when he enters his email "riogo10@homail.com"
+    And  your password "PruebasQA"
+    Then it will validate the message "Enter your Email address and password correct"
