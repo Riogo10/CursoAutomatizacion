@@ -8,24 +8,22 @@ import net.thucydides.core.annotations.Steps;
 
 public class GoogleTranslateStepDefinitions {
 
-    public class GoogletranslateStepDefinitions {
-
         @Steps
         GoogleHomePage traductor;
 
         @Given("that Susan wants to translate a word")
-        public void thatSusanWantsToTranslateAWord() {
-            traductor.opensGoogleTranslatePage();
+        public void thatSusanWantsToTranslateAWord(){
+                traductor.textBoxEmailLogin();
         }
 
-        @When("she translates the word cheese from English to Spanish")
-        public void sheTranslatesTheWordCheeseFromEnglishToSpanish() {
-
+        @When("she translates the word {string} from English to Spanish")
+        public void sheTranslatesTheWordFromEnglishToSpanish(String word){
+                traductor.textBoxEmailLogin();
         }
 
-        @Then("she should see the word queso in the screen")
-        public void sheShouldSeeTheWordQuesoInTheScreen() {
-
+        @Then("she should see the word {string} in the screen")
+        public void sheShouldSeeTheWordInTheScreen(String result){
+                traductor.textBoxEmailLogin();
         }
-    }
+
 }
